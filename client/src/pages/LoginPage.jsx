@@ -12,7 +12,7 @@ export default function LoginPage() {
     ev.preventDefault();
     try {
       const { data } = await axios.post('http://localhost:4000/login', { email, password });
-      console.log(data);
+      // console.log(data);
       setUser(data);
       alert('Login successful');
       setRedirect(true);
